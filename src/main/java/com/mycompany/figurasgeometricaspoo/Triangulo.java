@@ -1,15 +1,21 @@
 package com.mycompany.figurasgeometricaspoo;
 
-public class Triangulo {
+public class Triangulo extends FiguraGeometrica {
     private double base;
     private double altura;
-    double lado1;
-    double lado2;
-    double lado3;
-    public double obtenerArea(){ 
-        return base*altura/2;
+
+    public Triangulo(String nombre, String color, double base, double altura) {
+        super(nombre, color);
+        this.base = base;
+        this.altura = altura;
     }
-    public double obtenerPerimetro(){        
-        return lado1+lado2+lado3;
+    public double obtenerArea() {
+        double areaTriangulo = (base * altura)/2;
+        return areaTriangulo;
+    } 
+    public double obtenerPerimetro(){
+        double perimetroTriangulo = 0;
+        return perimetroTriangulo;
+    
     }
 }

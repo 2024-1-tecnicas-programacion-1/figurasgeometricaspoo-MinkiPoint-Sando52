@@ -1,18 +1,20 @@
 package com.mycompany.figurasgeometricaspoo;
-
 public class Circulo extends FiguraGeometrica {
     private double radio;
-
-    public Circulo(String nombre, String color. double radio) {
+    public Circulo(String nombre, String color, double radio) {
         super(nombre, color);
         this.radio = radio;
     }
-    
+
     public double obtenerArea(){
-            return Math.PI * Math.pow(radio, 2);
+        double areaCirculo = Math.PI*(Math.pow(this.radio, 2));
+        return areaCirculo;
+    
     }
+    public double obtenerPerimetro(){
+        double perimetroCirculo = 2*radio*Math.PI;
+        return perimetroCirculo;
+        
    
-    public double obtenerPerimetro(){   
-        return 2 * Math.PI * radio;
     }
 }
